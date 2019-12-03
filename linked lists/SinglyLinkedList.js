@@ -1,9 +1,11 @@
+
+
 function Node(data) {
     this.data = data;
     this.next = null;
 }
 
-class SinglyLinkedList {
+class SingleLinkedList {
     constructor() {
         this.head = null;
         this.tail = null;
@@ -93,3 +95,6 @@ singlyLinkedList.add(2);
 singlyLinkedList.add(3);
 singlyLinkedList.add(4);
 singlyLinkedList.print();
+
+
+export default SingleLinkedList;
