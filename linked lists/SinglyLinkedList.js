@@ -87,14 +87,14 @@ class SingleLinkedList {
     }
 }
 
-const singlyLinkedList = new SinglyLinkedList()
+// const singlyLinkedList = new SinglyLinkedList()
 
-singlyLinkedList.print(); // => ''
-singlyLinkedList.add(1);
-singlyLinkedList.add(2);
-singlyLinkedList.add(3);
-singlyLinkedList.add(4);
-singlyLinkedList.print();
+// singlyLinkedList.print(); // => ''
+// singlyLinkedList.add(1);
+// singlyLinkedList.add(2);
+// singlyLinkedList.add(3);
+// singlyLinkedList.add(4);
+// singlyLinkedList.print();
 
 
-export default SingleLinkedList;
+module.exports = SingleLinkedList
