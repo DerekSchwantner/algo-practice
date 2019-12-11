@@ -101,3 +101,46 @@ class DoublyLinkedList {
         console.log(string.trim());
     }
 }
+
+
+let doublyLinkedList = new DoublyLinkedList()
+
+doublyLinkedList.add(1);
+doublyLinkedList.add(3);
+doublyLinkedList.add(4);
+doublyLinkedList.add(10);
+doublyLinkedList.print()
+
+//function for inserting node into sorted list, works in Hacker Rank but not in webstorm
+
+function sortedInsert(head, data) {
+    let newNode = new Node(data)
+    let currentNode = head
+
+    while (currentNode !== null){
+        if (head.data > data){
+            head.prev = newNode
+            newNode.next = head
+            head = newNode
+            return head
+        } else if (data < currentNode.data){
+            newNode.next = currentNode
+            newNode.prev = currentNode.prev
+            currentNode.prev.next = newNode
+            currentNode.prev = newNode
+            return head
+        } else if (currentNode.next === null && currentNode.data <= data) {
+            currentNode.next = newNode
+//                 newNode.prev = currentNode
+//                 newNode.next = null
+            return head
+        } else {
+            currentNode = currentNode.next
+        }
+    }
+}
+
+sortedInsert(doublyLinkedList.head, 5)
+doublyLinkedList.print()
+
+
