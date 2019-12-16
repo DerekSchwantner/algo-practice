@@ -140,7 +140,12 @@ function sortedInsert(head, data) {
     }
 }
 
-sortedInsert(doublyLinkedList.head, 5)
-doublyLinkedList.print()
+// sortedInsert(doublyLinkedList.head, 5)
+// doublyLinkedList.print()
+
+let nn = new Node()
+
+nn.setAttributeNode("visited", true)
+console.log(nn.hasAttributes())
 
 
