@@ -34,3 +34,4 @@ const newObj = {
     age: ""
 }
 console.log(Object.keys(newObj))
+console.log(Object.keys(newObj))
