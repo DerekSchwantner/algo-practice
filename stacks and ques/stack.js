@@ -35,3 +35,31 @@ const newObj = {
 }
 console.log(Object.keys(newObj))
 console.log(Object.keys(newObj))
+
+//if we dont have access to the native JS array, lets build it using a string as storage
+
+// class NoArrayStack {
+//     constructor() {
+//         this.storage = "";
+//     }
+//
+//     push(val) {
+//         this.storage = this.storage.concat("***", val)
+//     }
+//
+//     pop() {
+//         return
+//     }
+//
+//     peek() {
+//         return this.storage[this.storage.length-1];
+//     }
+//
+//     isEmpty() {
+//         return this.storage.length === 0;
+//     }
+//
+//     printContents() {
+//         this.storage.forEach(elem => console.log(elem));
+//     }
+// }
