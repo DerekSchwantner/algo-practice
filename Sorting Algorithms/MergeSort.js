@@ -103,3 +103,4 @@ resetCounters();
 mergeSortBottomUp(arrayReversed.slice()); // => outer: 4 inner: 9 swap: 36
 console.log('outer:', countOuter, 'inner:', countInner, 'swap:', countSwap);
 resetCounters();
+resetCounters();
