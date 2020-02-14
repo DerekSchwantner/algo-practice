@@ -9,6 +9,8 @@ class City {
     in a format that makes your search function accurate and time efficient.
     */
     constructor(data){
+        this.pickupLocations = {}
+        this
 
     }
 
