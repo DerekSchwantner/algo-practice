@@ -233,7 +233,15 @@ class Geohash {
 
 // export default Geohash;
 
-
+let adjacentHashes = []
 let ng = Geohash.neighbours("gbsuv7s")
 
 console.log(ng)
+
+Object.values(ng).forEach( geohash => adjacentHashes.push(geohash))
+let gh = "gbsuv7sttyy"
+
+let ss = gh.substr(0,7)
+
+// console.log(gh.startsWith("gbsuv7d"))
+console.log(adjacentHashes)
