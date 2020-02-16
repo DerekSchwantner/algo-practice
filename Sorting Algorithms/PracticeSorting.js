@@ -50,7 +50,7 @@ class City {
               // if the distance is < 1 minute walk, it gets a 10 rank for the score, decreasing by 1 for every minute further the walk is. Then distance score is added to composite score
               //  putting more of an emphasis on distance to the pickup location we will weigh that score more than the ease of pickup.
               composite+= pickupEase * 0.8
-
+              //  future task** create a better composite score using more complex models
               return { pickupDestination: composite}
        }
 
