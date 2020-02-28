@@ -93,3 +93,5 @@ const dijkstra = (graph) => {
 };
 
 console.log('dijkstra', dijkstra(graph));
+
+console.log()
