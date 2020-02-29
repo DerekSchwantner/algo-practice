@@ -9,6 +9,15 @@ const graph = {
     finish: {}
 };
 
+const graph2 = {
+    start: {A: 12, B: 2},
+    A: {C: 4, D: 2},
+    B: {A: 8, D: 7},
+    C: {D: 9, finish: 3},
+    D: {finish: 1},
+    finish: {}
+};
+
 const findLowestCostNode = (costs, processed) => {
     const knownNodes = Object.keys(costs)
 
@@ -93,3 +102,4 @@ const dijkstra = (graph) => {
 };
 
 console.log('dijkstra', dijkstra(graph));
+
