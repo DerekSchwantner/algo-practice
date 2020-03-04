@@ -5,3 +5,10 @@
 //  pop front node from queue and process it
 //  replace color of current pixel (popped node) with that of replacement
 //  process all 8 adjacent pixels of current pixel and enqueue each valid pixel which has same color as current pixel
+
+
+// console.log(typeof(true));
+
+let answer = prompt("enter your name")
+
+console.log(answer)
