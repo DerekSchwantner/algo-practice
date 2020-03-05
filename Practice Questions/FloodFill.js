@@ -9,6 +9,11 @@
 
 // console.log(typeof(true));
 
-let answer = prompt("enter your name")
+let rapper = { name: "jon"}
 
-console.log(answer)
+rapper['age'] = 29
+
+
+let filterData = (arr, filter) =>{
+    return
+}
