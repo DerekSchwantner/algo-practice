@@ -45,4 +45,6 @@ That is, after removal the previous node becomes the last node of the Linked-lis
   }
 };
 
-let removeKth = (ll, value) => {};
+let removeKth = (ll, value) => {
+  let currentNode = null;
+};
